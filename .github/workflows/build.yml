@@ -5,9 +5,9 @@ on:
   workflow_dispatch:
 
 env:
-  PACT_BROKER_BASE_URL: https://test.pactflow.io
+  PACT_BROKER_BASE_URL: https://lego.pactflow.io
   PACT_BROKER_TOKEN: ${{ secrets.PACTFLOW_TOKEN_FOR_CI_CD_WORKSHOP }}
-  REACT_APP_API_BASE_URL: http://localhost:3001
+  REACT_APP_API_BASE_URL: y-JJefkB6jdN4XBP0qEGAA
   GIT_COMMIT: ${{ github.sha }}
   GIT_REF: ${{ github.ref }}
 
@@ -20,8 +20,8 @@ jobs:
           [
             # "pactflow-example-bi-directional-provider-dredd",
             # "pactflow-example-bi-directional-provider-restassured",
-            # "pactflow-example-bi-directional-provider-postman",
-              "pactflow-example-provider",
+             "pactflow-example-bi-directional-provider-postman",
+            #  "pactflow-example-provider",
             # 'pactflow-example-bi-directional-provider-dotnet'
           ]
     steps:
